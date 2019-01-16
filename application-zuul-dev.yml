@@ -12,9 +12,11 @@ eureka:
     prefer-ip-address: true
 zuul:
   ignored-services: "*"
-  prefix: "/services" 
+  prefix: "/services"
   routes:
     plat.serviceId: aigou-plat #这是调用满足条件的服务名，注意要小写
     plat.path: /plat/** #这是所有路径前的通配
     product.serviceId: aigou-product #这是调用满足条件的服务名，注意要小写
     product.path: /product/** #这是所有路径前的通配
+
+
